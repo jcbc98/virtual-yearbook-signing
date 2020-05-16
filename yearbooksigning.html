@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearbook Signing</title> 
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="html5-canvas-drawing-app.js"></script></head>
+
+    <style type = "text/css">
+      p {
+      	width: 600px;
+      	background-color: #DAA520;
+      }
+      #imagefile {
+      	width: 600px;
+      	background-color: yellow;
+      }
+      canvas {
+       background-color: white;
+      }
+    </style>
+</head>
+
+<body>
+
+<p style="text-align: center;">Signing yearbook with <input type="button" value="BLUE" onClick="javascript:toggleColor(this);"/> 
+(click to change color)
+<br/><br/>
+<input type="button" style="float:left;" value="Start over" onClick="javascript:startOver();"/>
+<input id="saveButton" style="float:right;" type="button" value="Save to gallery" onClick="javascript:saveToGallery();" /><br/>&nbsp;<br/></p>
+<div id="imagefile" style="text-align: center;"></div>
+<div><br/></div>
+<div id="canvasDiv"></div>
+<script type="text/javascript"> $(document).ready(function() {
+    	 prepareCanvas();
+});</script>
+
+<p>Credits:<br/>
+http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
+<br/>
+https://github.com/williammalone/Simple-HTML5-Drawing-App
+<br/>
+https://stackoverflow.com/questions/13198131/how-to-save-an-html5-canvas-as-an-image-on-a-server
+</p>
+
+</body>
+</html>
