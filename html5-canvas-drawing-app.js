@@ -47,7 +47,7 @@ function prepareCanvas()
 	if(typeof G_vmlCanvasManager != 'undefined') {
 		canvas = G_vmlCanvasManager.initElement(canvas);
 	}
-	context = canvas.getContext("2d", { alpha: false }); // Grab the 2d canvas context
+	context = canvas.getContext("2d"); // Grab the 2d canvas context
 	
 	// Note: The above code is a workaround for IE 8 and lower. Otherwise we could have used:
 	//     context = document.getElementById('canvas').getContext("2d");
